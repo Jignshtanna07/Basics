@@ -4,8 +4,8 @@
         <img [src]="srcpath" alt="" srcset="" height="220px">
     </div>
 </div>
-<div class="changedisplay">
-    <button>Show Something</button>
+<div class="changedisplay"  [style.background]="backgroundColor">
+    <button (click)="changeNotification()">Show Something</button>
     <div class="close" [hidden]="notificationclaose">
         {{notifications}}
     </div>

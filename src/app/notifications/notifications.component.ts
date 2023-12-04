@@ -11,7 +11,13 @@ export class NotificationsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  backgroundColor="white"
   notifications:string = 'notifications';
   srcpath = "/assets/Illustrator-Vector-Illustration-1.jpg"
-  notificationclaose:boolean=true
+  notificationclaose:boolean=false
+  changeNotification(){
+    this.notifications = "Jignesh Is On the Game"
+    console.log("show notification Btn Click")
+    this.backgroundColor = "#8ACE14"
+  }
 }
