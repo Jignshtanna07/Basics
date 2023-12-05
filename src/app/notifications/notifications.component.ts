@@ -15,6 +15,12 @@ export class NotificationsComponent implements OnInit {
   notifications:string = 'notifications';
   srcpath = "/assets/Illustrator-Vector-Illustration-1.jpg"
   notificationclaose:boolean=false
+  // ngOnChanges(){
+  
+  // }
+  parameterEvent(event:Event):void{
+    console.log(<HTMLInputElement>event.target) 
+  }
   changeNotification(){
     this.notifications = "Jignesh Is On the Game"
     console.log("show notification Btn Click")

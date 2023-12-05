@@ -4,6 +4,10 @@
         <img [src]="srcpath" alt="" srcset="" height="220px">
     </div>
 </div>
+<hr>
+<div class="event">
+    <input type="text" name="eventmanage" id="eventmanage"  (input)="parameterEvent($event)"/>
+</div>
 <div class="changedisplay"  [style.background]="backgroundColor">
     <button (click)="changeNotification()">Show Something</button>
     <div class="close" [hidden]="notificationclaose">
